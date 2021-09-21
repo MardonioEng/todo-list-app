@@ -9,7 +9,7 @@ Descrição da API e tecnologias utilizadas...
 
 ## Features
 
-- [ ] Cada item da lista deve possuir os atributos nome, descrição, data de criação, categoria e usuário
+- [ ] Cada item da lista deve possuir os atributos nome, data de criação, categoria e usuário
 - [ ] Cada categoria deve possuir os atributos nome e descrição
 - [ ] O sistema deve permitir o cadastro e edição de usuários. Cada usuário deve ter os atributos nome, senha e e-mail
 - [ ] Ao inserir um usuário, o sistema deve enviar um e-mail de confirmação de cadastro
@@ -17,4 +17,30 @@ Descrição da API e tecnologias utilizadas...
 - [ ] A autenticação será feita usando JWT
 - [ ] Cada usuário poderá exportar sua lista no formato PDF
 - [ ] A API será documentada usando Swagger
+
+
+
+
+
+### Inicialização do projeto
+
+````
+composer create-project --prefer-dist laravel/laravel app_locadora_carros
+````
+
+### **Criação de Models, Controllers e Migrations**
+
+````php
+php artisan make:model --migration --controller Categoria
+````
+
+````php
+php artisan make:model --migration --controller Usuario
+````
+
+````php
+php artisan make:model --migration --controller Item
+````
+
+
 
