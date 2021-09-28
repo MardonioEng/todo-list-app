@@ -17,4 +17,10 @@ interface IUsuarioService
      * @param array $dados
      */
     function atualizar(int $id, array $dados): void;
+
+    /**
+     * @param int $id
+     * @param array $dados
+     */
+    function alterarSenha(int $id, array $dados): void;
 }
